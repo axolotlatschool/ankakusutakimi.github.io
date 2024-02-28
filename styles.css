@@ -1,0 +1,125 @@
+body {
+  font-family: 'Exo 2', Arial, sans-serif; /* Exo 2 fontunu ekleyin */
+  margin: 0;
+  padding: 0;
+  background-color: #223843; /* Arkaplan - Koyu mavi tonu */
+  color: #eff1f3; /* Açık Renk - Beyaz */
+  background-image: url('bg.jpg'); /* Arka plan resmi */
+  background-size: cover; /* Arka plan resmi boyutunu kapsa */
+  background-attachment: fixed; /* Arka planın sabitlenmesi */
+  background-position: center; /* Resmin ortalanması */
+  background-color: rgba(255, 255, 255, 0.9); /* Saydamlık için arka plan rengi */
+}
+
+header, footer {
+  background-color: #223843; /* Renk paletindeki koyu mavi */
+  color: #fff; /* Beyaz */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  background-image: url('bg.jpg'); /* Arka plan resmi */
+  background-size: cover; /* Arka plan resmi boyutunu kapsa */
+  background-attachment: fixed; /* Arka planın sabitlenmesi */
+  background-position: center; /* Resmin ortalanması */
+  background-color: rgba(255, 255, 255, 0.9); /* Saydamlık için arka plan rengi */
+}
+
+.logo img {
+  width: 50px; /* Logo boyutunu ayarlayın */
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  margin-left: 10px; /* Logodan biraz boşluk bırakmak için */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #eff1f3; /* Beyaz */
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  background-color: #eff1f300; /* Orta tonlu turkuaz */
+  color: #fff; /* Beyaz-krem */
+}
+
+.member {
+  text-align: center;
+}
+
+.member img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* Chip container */
+.chip-container {
+  position: fixed;
+  align-items: center;
+  display: flex;
+  overflow-x: auto; /* Yatay kaydırma */
+  gap: 10px; /* Chip'ler arasında boşluk */
+  padding: 10px;
+}
+
+/* Chip */
+.chip {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0; /* Chip arka plan rengi */
+  border-radius: 20px; /* Yuvarlatılmış köşeler */
+  padding: 10px 20px; /* İçeriği çerçeveye hizalamak için boşluklar */
+  cursor: grabbing; /* Farenin üstüne gelince imleç el işareti olur */
+}
+
+.chip img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Yuvarlatılmış resim kenarları */
+  margin-right: 10px;
+}
+
+/* Chip içeriği */
+.chip .info {
+  flex: 1; /* İçeriğin genişliği */
+}
+.info {
+  color: #223843;
+}
+
+.chip h3, .chip p {
+  margin: 0; /* Başlık ve açıklama arasında boşluk bırakmaz */
+}
+
+footer {
+  position: fixed; /* Sabit pozisyon */
+  bottom: 0; /* Sayfanın altına sabitle */
+  width: 100%; /* Tam genişlik */
+  background-color: #223843; /* Arka plan rengi */
+  color: #ffffff; /* Metin rengi */
+  padding: 10px; /* İçerik ile kenar boşlukları */
+  text-align: center; /* Metni ortala */
+}
